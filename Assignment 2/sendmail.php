@@ -44,7 +44,7 @@ try {
     if( $mail->send())
     {
         $_SESSION['status'] = "Thank you conatct us - Ayesha Mehmood";
-        header("Location: {$_SERVER["HTTP_REFERER"]}");
+        header("Location: {$_SERVER["HTTP_REFERER"]}"); //it is used to redirect to previous page after form submission.
         exit(0);
     }else{
         $_SESSION['status'] = "Message Could not sent.MAil Error = {$mail->ErrorInfo}";
@@ -52,7 +52,7 @@ try {
         exit(0);
     }
 
-} catch (Exception $e) {
+} catch (Exception $e){
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     exit(0);
 
