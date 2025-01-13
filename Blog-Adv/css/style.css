@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    overflow: hidden;
+}
+:root{
+    --green: #5CB338;
+    --yellow:#ECE852;
+    --orange:#FFC145;
+    --red:#FB4141;
+    --text-color:#000;
+    --box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.5);
+    --border: solid 2px black;
+    --font-family:  "Open Sans", serif;
+    --heading: 24px;
+    --p:18px;
+    --bg-color: #f7f7f7;
+    --padding: 0px 2rem;
+    --border-radius: 20px;
+    --margin: 2rem 2rem;
+}
+header{
+    min-height:60px;
+    background-color: var(--orange);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: var(--heading);
+    color: var(--text-color);
+}
+section{
+    width:100%;
+}
+.side-bar{
+    border: var(--border);
+    background-color: var(--red);
+    min-height: 93vh;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem ;
+    padding-left: 4rem;
+}
+.side-bar h1{
+    font-size: var(--heading);
+    padding: var(--padding);
+}
+.side-bar a{
+    color:white;
+    padding: var(--padding);
+    font-size: var(--p);
+}
+.detail{
+    background-color: var(--bg-color);
+}
+.main-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background-color: var(--yellow);
+    padding: 4rem;
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+}
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    background-color: var(--green);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background-color: var(--orange);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: var(--red);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+}
+
+
+
+
+
+
+

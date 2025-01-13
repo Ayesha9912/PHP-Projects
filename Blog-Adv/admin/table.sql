@@ -1,0 +1,15 @@
+USE adv_blog;
+
+-- CRERATE THE TABLE IN THE ADV_BLOG--
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    cpass VARCHAR(50) NOT NULL
+);
+
+
+
+
+
